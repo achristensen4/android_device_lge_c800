@@ -11,7 +11,7 @@ com.qc.hardware=true
 com.qc.hdmi_out=false
 
 # Modify MMS APN retry timer from 5s to 2s.
-ro.gsm.2nd_data_retry_config=max_retries=3, 2000, 2000, 2000
+ro.gsm.2nd_data_retry_config=max_retries=20000,20000,20000
 
 ro.telephony.ril.v3=signalstrength,datacall,singlepdp
 ro.telephony.ril_class=LGEQualcommRIL
@@ -30,7 +30,7 @@ ril.subscription.types=NV,RUIM
 
 # Default network type.
 # 0 => WCDMA preferred.
-ro.telephony.default_network=0
+ro.telephony.default_network=4
 
 # For the default value of agps
 ro.ril.def.agps.mode=2
@@ -39,7 +39,7 @@ ro.ril.def.agps.mode=2
 net.tcp.buffersize.hsdpa=4094,87380,393216,4096,16384,110208
 
 wifi.interface=wlan0
-wifi.supplicant_scan_interval=30
+wifi.supplicant_scan_interval=16
 
 mobiledata.interfaces=rmnet0,rmnet1,rmnet2
 
